@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --radius: 1rem; }
+html, body { height: 100%; }
+.prose ul { list-style: disc; margin-left: 1.25rem; }
+.badge { @apply inline-flex items-center gap-1 text-xs px-2 py-1 rounded-full border; }
+.badge.ok { @apply border-green-200 bg-green-50 text-green-700; }
+.badge.warn { @apply border-yellow-200 bg-yellow-50 text-yellow-700; }
+.badge.danger { @apply border-red-200 bg-red-50 text-red-700; }
